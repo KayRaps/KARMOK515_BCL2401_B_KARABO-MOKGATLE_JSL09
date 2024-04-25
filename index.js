@@ -44,3 +44,7 @@ function getCurrentTime() {
     const date = new Date()
     document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
 }
+
+//Update the current time based on current geolocation every second
+
+setInterval(getCurrentTime, 1000)
