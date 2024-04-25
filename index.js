@@ -38,3 +38,9 @@ try {
    } catch (err) {
        console.error(err)
 }
+
+//Function to update the current time every second
+function getCurrentTime() {
+    const date = new Date()
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+}
