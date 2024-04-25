@@ -16,3 +16,9 @@ document.getElementById("author").textContent = `By: ${data.user.name}`
 )`
     document.getElementById("author").textContent = `By: Dodi Achmad`
 }
+
+try {
+    const res = await fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+        if (!res.ok) {
+            throw Error("Something went wrong")
+    }
